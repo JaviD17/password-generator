@@ -104,6 +104,8 @@ var generatePassword = function () {
     var numSet = "0123456789";
     var retVal = "";
 
+    debugger;
+
     // All four questions are yes
     if (charChoiceLower === true && charChoiceUpper === true && symChoice === true && numVal === true) {
         for (var i = 0; i < (passwordLength + 1); i++) {
@@ -111,7 +113,6 @@ var generatePassword = function () {
             retVal += (charSet.charAt(Math.floor(Math.random() * 96) + 1));
         }
     }
-
 
     // no numbers
     if (charChoiceLower === true && charChoiceUpper === true && symChoice === true && numVal === false) {
